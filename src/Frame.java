@@ -326,8 +326,9 @@ public class Frame extends JFrame implements KeyListener,ActionListener{
 		
 		if(bodovi > scores.getLowestScore()){
 			String name = JOptionPane.showInputDialog("Please enter your name");
-			if(name != null)
-				scores.score_new(name,bodovi);
+			if(name != null){
+				name = name.replaceAll("\\s","");
+				scores.score_new(name,bodovi);}
 			}
 	}
 	
