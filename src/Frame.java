@@ -306,10 +306,9 @@ public class Frame extends JFrame implements KeyListener,ActionListener{
 			i = rand.nextInt(rijeci9.size() - 1) + 1;
 			rijec = rijeci9.get(i);}
 		
-		else if(bodovi >=600 && bodovi <700){
+		else if(bodovi >=600){
 				i = rand.nextInt(rijeci10.size() - 1) + 1;
 				rijec = rijeci10.get(i);}
-		else{}
 		
 		//System.out.println("nova rijec je= "+rijec);
 		promjeni_text(rijec);
